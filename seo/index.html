@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plotyx Template</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon Link -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%; /* Ensure body takes full height */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #F3F4F6; /* Updated background color */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+            border-bottom: 2px solid #007bff; /* Bottom border for separation */
+        }
+        .logo img {
+            height: 40px;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .iframe-container {
+            width: 100%;
+            height: calc(100vh - 80px); /* Adjust height based on header */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column; /* Stack header items on smaller screens */
+                align-items: flex-start; /* Align items to the start */
+            }
+            .button {
+                margin-top: 10px; /* Add margin for better spacing */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="https://plotyx.com">
+                <img src="https://api.plotyx.com/file/logo/88?timestamp=1727745256744" alt="Plotyx Logo">
+            </a>
+        </div>
+        <a href="https://app.plotyx.com/#/auth/sign-up" class="button">Use This Template for Free</a>
+    </div>
+    <div class="iframe-container">
+        <iframe src="https://app.plotyx.com/#/auth/brand?dashboard=26" title="Plotyx Template"></iframe>
+    </div>
+</body>
+</html>
